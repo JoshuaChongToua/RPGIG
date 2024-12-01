@@ -53,7 +53,7 @@ public class KeyHandler implements KeyListener {
 
     }
 
-    public void tradeState(int code) {
+    public void tradeState(int code) {  //événement lorsque "a" est appuyer sur l'écran de choix pour le trade
         if (code == KeyEvent.VK_A) {
             aPressed = true;
         }
@@ -90,7 +90,7 @@ public class KeyHandler implements KeyListener {
         }
     }
 
-    public void titleState(int code) {
+    public void titleState(int code) { //événement lorsque "a" est appuyer sur l'écran titre
         if (gp.ui.titleScreenState == 0) {
             if (code == KeyEvent.VK_Z) {
                 gp.ui.commandNumber--;
@@ -150,7 +150,7 @@ public class KeyHandler implements KeyListener {
         }
     }
 
-    public void playState(int code) {
+    public void playState(int code) { //événement lorsque les touches sont appuyer sur pendant le jeu
         if (code == KeyEvent.VK_Z) {
             upPressed = true;
         }

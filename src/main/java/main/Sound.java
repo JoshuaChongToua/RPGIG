@@ -10,7 +10,7 @@ public class Sound {
     Clip clip;
     String[] soundPaths = new String[30];
 
-    public Sound() {
+    public Sound() { //initialisation des sons
         soundPaths[0] = "/sounds/Adventure.wav";
         soundPaths[1] = "/sounds/coin.wav";
         soundPaths[2] = "/sounds/powerup.wav";

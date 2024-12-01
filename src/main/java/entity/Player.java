@@ -349,7 +349,7 @@ public class Player extends Entity {
                     break;
 
                 case "Chest":
-                    if (keyH.aPressed) {
+                    if (gp.keyH.aPressed) {
                         for (Entity elt : inventory) {
                             if (elt instanceof OBJ_Key) {
                                 gp.gameState = gp.endGameState;
@@ -365,6 +365,10 @@ public class Player extends Entity {
                     gp.obj[i] = null;
                     break;
 
+                case "ChestSpe":
+                    if (gp.keyH.aPressed){
+
+                    }
             }
         }
     }

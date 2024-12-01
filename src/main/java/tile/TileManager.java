@@ -25,20 +25,19 @@ public class TileManager {
         loadMap("/maps/world01.txt");
     }
 
-    public void getTileImage() {
+    public void getTileImage() { // initialisation des tuiles
         //PLACEHOLDER
-        setup(0, "grass00", false, false, false);
-        setup(2, "grass00", false, false, false);
-        setup(3, "grass00", false, false, false);
-        setup(4, "grass00", false, false, false);
-        setup(5, "grass00", false, false, false);
-        setup(6, "grass00", false, false, false);
-        setup(7, "grass00", false, false, false);
-        setup(8, "grass00", false, false, false);
-        setup(9, "grass00", false, false, false);
+        setup(0, "dungeon/sol", false, false, false);
+        setup(2, "dungeon/sol", false, false, false);
+        setup(3, "dungeon/sol", false, false, false);
+        setup(4, "dungeon/sol", false, false, false);
+        setup(5, "dungeon/sol", false, false, false);
+        setup(6, "dungeon/sol", false, false, false);
+        setup(7, "dungeon/sol", false, false, false);
+        setup(8, "dungeon/sol", false, false, false);
+        setup(9, "dungeon/sol", false, false, false);
+
         //PLACEHOLDER
-
-
         setup(10, "dungeon/sol", false, false, false);
         setup(11, "dungeon/lave", true, false, false);
         setup(12, "dungeon/solLave", false, true, false);
@@ -71,22 +70,18 @@ public class TileManager {
                 System.out.println("Erreur : Le fichier " + filePath + " n'a pas été trouvé !");
                 return;
             }
-
             BufferedReader br = new BufferedReader(new InputStreamReader(is));
 
             int col = 0;
             int row = 0;
-
             while (row < gp.maxWorldRow) {
                 String line = br.readLine();
                 if (line == null) break;
-
                 String[] numbers = line.split(" ");
                 if (numbers.length != gp.maxWorldCol) {
                     System.out.println("Erreur : La ligne " + (row + 1) + " ne contient pas " + gp.maxWorldCol + " colonnes !");
                     return;
                 }
-
                 for (col = 0; col < gp.maxWorldCol; col++) {
                     try {
                         int num = Integer.parseInt(numbers[col]);

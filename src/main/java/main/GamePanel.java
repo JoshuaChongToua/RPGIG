@@ -166,7 +166,6 @@ public class GamePanel extends JPanel implements Runnable{
 
         // OTHERS
         else {
-
             //Tile
             tileM.draw(g2);
 
@@ -208,9 +207,8 @@ public class GamePanel extends JPanel implements Runnable{
             Iterator<Entity> iterator = entityList.iterator();
             while (iterator.hasNext()) {
                 Entity entity = iterator.next();
-                iterator.remove(); // Supprime en toute sécurité l'élément courant
+                iterator.remove();
             }
-
 
             //UI
             ui.draw(g2);

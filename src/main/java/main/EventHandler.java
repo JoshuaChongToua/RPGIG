@@ -45,14 +45,9 @@ public class EventHandler {
             canTouchEvent = true;
         }
         if (canTouchEvent) {
-            //HEAL
-
-
-
-            if (hit(23, 13, "up")) {
-                teleport(23, 13, gp.dialogueState);
-            }
-
+//            if (hit(23, 13, "up")) {
+//                teleport(23, 13, gp.dialogueState);
+//            }
         }
     }
 
@@ -103,8 +98,6 @@ public class EventHandler {
             gp.playSoundEffect(2);
             gp.player.attackCancel = true;
             gp.player.life = gp.player.maxLife;
-
-            counter = 60;
         }
     }
 
