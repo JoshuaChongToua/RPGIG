@@ -356,6 +356,10 @@ public class Player extends Entity {
                                 gp.ui.currentDialogue = "Félicitation !! \nTu as trouvé le trésor! \n \nMerci d'avoir joué";
                                 break;
                             }
+                            else {
+                                gp.gameState = gp.dialogueState;
+                                gp.ui.currentDialogue = "Vous n'avez pas de clé";
+                            }
                         }
                     }
                     break;

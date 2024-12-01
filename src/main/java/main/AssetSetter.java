@@ -68,10 +68,6 @@ public class AssetSetter { // Classe pour set les objets sur la map
         gp.obj[i].worldY = gp.tileSize*7;
         i++;
 
-        gp.obj[i] = new OBJ_Chest(gp);
-        gp.obj[i].worldX = gp.tileSize*38;
-        gp.obj[i].worldY = gp.tileSize*36;
-        i++;
 
 
 
